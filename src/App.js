@@ -1,25 +1,68 @@
-import logo from './logo.svg';
-import './App.css';
+import App from './Components/App.jsx'
+import Axios from './Components/Axios.jsx';
+import Rendering from './Components/Rendering.jsx';
 
-function App() {
+ function RenderingLists() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+
+    <App/>
+    <Axios/>
+    <Rendering/>
+    
+    </>
+  )
 }
 
-export default App;
+export default RenderingLists;
+
+
+// useState to change the text using onclick botton. this is personal example 1 (just this page alone).
+
+// function MyButton(){
+//   return(
+//     <div>
+//     <button>
+//       click button
+//     </button> <br/>
+
+//     </div>
+//   );
+// } 
+
+
+// export default function MyApp() {
+//   return (
+//     <div>
+//       <h1>Hello world!</h1>
+//       <MyButton/>
+
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// useState to change the text using onclick botton. this personal example 2.
+
+// import Home from './Components/home';
+// // import './App.css';
+
+// function App() {
+//   return (
+//     <div>
+//       <Home/>
+//     </div>
+//   );
+// }
+
+// export default App;
